@@ -9,23 +9,9 @@ body { line-height: 1.5; min-height: 100vh }
 img { width: 100%; height: auto; display: block }
 input, button, textarea, select { font: inherit }
 
-section { 
+/* ================= ENDS ================ */
+
+body {
+    text-align: center;
     padding: 4% 20%;
-}
-
-section *:last-child { margin-bottom: 0 !important }
-
-h2 {
-    font-size: 56px;
-    margin-bottom: 4px;
-}
-
-h3 {
-    font-size: 32px;
-    margin-bottom: 4px;
-}
-
-p {
-    font-size: 20px;
-    margin-bottom: 16px
 }

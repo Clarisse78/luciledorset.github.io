@@ -11,6 +11,10 @@ input, button, textarea, select { font: inherit }
 
 /* ================= ENDS ================ */
 
+body { 
+    padding: 4% 20%;
+}
+
 h1 {
     font-size: 84px;
     margin-bottom: 64px;
