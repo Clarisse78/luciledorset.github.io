@@ -19,10 +19,7 @@ h1 {
 
 h2 {
     font-size: 36px;
-    margin-bottom: 4px;
-    font-family: sans-serif;
-    line-height: 1.6;
-    margin-bottom: 20px;
+    margin-bottom: 4px;   
 }
 
 h3 {
@@ -32,4 +29,7 @@ h3 {
 
 p {
     font-size: 18px;
+    font-family: sans-serif;
+    line-height: 1.6;
+    margin-bottom: 20px;
 }
