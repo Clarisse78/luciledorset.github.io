@@ -14,4 +14,10 @@ input, button, textarea, select { font: inherit }
 body {
     text-align: center;
     padding: 4% 20%;
+    background-color: #137b90;
+}
+
+a {
+    color: whitesmoke;
+    font-size: 18px;
 }

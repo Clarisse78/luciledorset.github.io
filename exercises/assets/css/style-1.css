@@ -9,8 +9,21 @@ body { line-height: 1.5; min-height: 100vh }
 img { width: 100%; height: auto; display: block }
 input, button, textarea, select { font: inherit }
 
+/* ================= ENDS ================ */
+
+/* Desktops */
+@media (min-width: 768px) {
+    body { padding: 4% 20% }
+ }
+ 
+ /* Mobiles */
+ @media (max-width: 767px) {
+    body { padding: 8% 5% }
+ }
+
 body { 
-    padding: 4% 20%; 
+    padding: 4% 20%;
+    background-color: antiquewhite; 
 }
 
 h1 {
@@ -19,16 +32,19 @@ h1 {
     font-weight: normal;
     letter-spacing: -2px;
     margin-bottom: 32px;
+    color: brown;
 }
 
 h2 {
     font-size: 36px;
     margin-bottom: 4px;   
+    color: brown;
 }
 
 h3 {
     font-size: 24px;
     margin-bottom: 4px;
+    color: brown;
 }
 
 p {
