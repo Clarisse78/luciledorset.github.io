@@ -18,6 +18,24 @@ input, button, textarea, select { font: inherit }
 @media (max-width: 767px) { body { padding: 12% 8% } }
 
 
+/* Passive link styles */
+            
+a:link, a:visited {
+    text-decoration: none;
+    padding-bottom: 2px;
+    color: #000;
+    border-bottom: solid 2px #000;
+} 
+            
+/* Interactive link styles */
+            
+a:hover, a:focus, a:active {
+    text-decoration: none; 
+    padding-bottom: 2px;
+    color: #f26f21;
+    border-bottom: solid 2px blue;
+}
+
 /* Web page */
 body {
     background-color: #FFFFBD;
