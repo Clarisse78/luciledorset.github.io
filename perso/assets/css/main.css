@@ -17,12 +17,13 @@ input, button, textarea, select { font: inherit }
 
 body {
     text-align: center;
-    background-color:#2d2d2d;
+    background-color: #393E46;
+    color: whitesmoke;
 }
 
 
 nav {
-    background: black;
+    background: #222831;
 }
 
 .nav-links ul li {
