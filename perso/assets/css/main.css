@@ -36,3 +36,8 @@ nav {
     text-decoration: none;
     font-size: 18px;
 }
+
+.avatar {
+    align-content: left;
+    width: 100px;
+}
