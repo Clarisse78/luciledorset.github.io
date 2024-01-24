@@ -108,3 +108,37 @@ body {
 .nav-links ul li:hover::after {
   width: 100%;
 }
+
+
+.badge {
+  display: inline-block;
+  padding: .25em .4em;
+    padding-right: 0.4em;
+    padding-left: 0.4em;
+  font-size: 65%;
+  line-height: 1;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: .25rem;
+  text-decoration: none;
+  width: fit-content;
+  padding-top: 2px;
+  text-align: center;
+  font-weight: 500;
+}
+
+
+.badge-know {
+  background-color: #6c757d;
+}
+
+.badge-content{
+  background-color: #c77171;
+}
+
+.timeline .event > a {
+	position: absolute;
+	top: 0;
+	left: -180px;
+	top: 25px;
+}
