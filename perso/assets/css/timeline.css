@@ -21,22 +21,6 @@ body {
     color: whitesmoke;
 }
 
-
-nav {
-    background: #222831;
-}
-
-.nav-links ul li {
-    display: inline-block;
-    padding: 15px 15px;
-}
-
-.nav-links ul li a {
-    color: whitesmoke;
-    text-decoration: none;
-    font-size: 18px;
-}
-
 .timeline {
   border-left: 3px solid #00ADB5;
   text-align: left;
@@ -44,6 +28,28 @@ nav {
   list-style: none;
   width: 60%;
   padding: 50px 50px 20px 50px;
+}
+
+@media (max-width: 1079px ) { 
+  .nav-links li:nth-child(1) {
+    visibility: hidden;
+  } }
+@media (min-width: 1080px ) { 
+  .nav-links li:nth-child(1) {
+    padding-right: 40vw;
+    place-content:center;
+  } }
+@media (min-width: 1200px ) { 
+  .nav-links li:nth-child(1) {
+    padding-right: 50vw;
+    place-content:center;
+  } }
+
+.rectangle{
+    width: 100px;
+    height: 35px;
+    border: 2px solid #2196F3;
+    padding: 3px 5px 0px 0px;
 }
 
 .timeline .event:before {
