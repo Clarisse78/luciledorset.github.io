@@ -24,21 +24,37 @@ input, button, textarea, select { font: inherit }
   background: #222831;
 }
 
-nav {
-  background: #222831;
-  text-align: right;
-  padding-right: 150px;
+@media (max-width: 767px) {
+  .nav-links ul li a {
+    color: whitesmoke;
+    text-decoration: none;
+    font-size: 14px;
+  }
+  .nav-links ul li {
+    display: inline-block;
+    padding: 8px 0px 8px 30px;
+  }
+  nav {
+    background: #222831;
+    text-align: right;
+    padding-right: 100px;
+  }
+}
+@media (min-width: 768px) {
+  .nav-links ul li a {
+    color: whitesmoke;
+    text-decoration: none;
+    font-size: 18px;
+  }
+  .nav-links ul li {
+    display: inline-block;
+    padding: 15px 30px 15px 30px;
+  }
+  nav {
+    background: #222831;
+    text-align: right;
+    padding-right: 150px;
+  }
 }
 
-.nav-links ul li {
-  display: inline-block;
-  padding: 15px 30px 15px 30px;
-}
-
-
-.nav-links ul li a {
-  color: whitesmoke;
-  text-decoration: none;
-  font-size: 18px;
-}
 
