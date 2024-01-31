@@ -57,4 +57,17 @@ input, button, textarea, select { font: inherit }
   }
 }
 
+.container-menu{
+  text-align: right;
+}
 
+
+@media (max-width: 767px) {
+    .brand{
+      display: none;
+    }
+  }
+
+.nav-links {
+  margin-left: auto;
+}
