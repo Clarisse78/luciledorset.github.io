@@ -37,7 +37,8 @@ body {
 }
 
 .timeline p {
-	font-size: 0.95rem;
+	font-size: 0.9rem;
+  color: #e0e0e0;
 }
 
 /*
@@ -154,13 +155,17 @@ body {
 }
 
 .links{
-  padding-bottom: -10px;
+  padding-bottom: -8px;
+  list-style: disc;
+  padding-top: 10px;
+
 }
 .links li a{
   position:relative;
   text-decoration: none;
-  color: blue;
+  color: #467bd1;
   margin-left: 10px;
+  font-size: 0.9rem;
 }
 
 .links li{
@@ -219,6 +224,7 @@ body {
   background-color: #17a2b8;
 }
 
-.links{
-  padding-top: 15px;
+.badge-dead{
+  color: #fff;
+  background-color: red;
 }
