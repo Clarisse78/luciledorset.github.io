@@ -1,0 +1,18 @@
+
+nav.theme-dark, nav.theme-dark ul.links-wrapper.active { background-color: #222831 }
+
+header.theme-dark   { background-color: var(--gray-800) }
+
+header.theme-dark  h1 { color: #00ADB5; }
+
+section.theme-dark   { background-color: var(--gray-800) }
+
+footer.theme-dark   { background-color: #222831 }
+
+
+
+header .col-text h2, .col-1 > h3 { line-height: 1.8 }
+
+* {
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+}
