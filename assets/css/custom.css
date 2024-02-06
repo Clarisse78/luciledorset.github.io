@@ -20,3 +20,44 @@ header .col-text h2, .col-1 > h3 { line-height: 1.8 }
 .hidden{
     visibility: hidden;
 }
+
+.container-btn a.btn:nth-child(1)
+{
+    color:white;
+    background-color: #00ADB5;
+    border-color: #00ADB5;
+}
+
+.container-btn a.btn:nth-child(2)
+{
+    color:#00ADB5;
+    border-color: #00ADB5;
+}
+
+
+ .container-btn a.btn:nth-child(1):hover {
+	background-color: transparent;
+	color: #00ADB5;
+}
+
+ .container-btn a.btn:nth-child(1):link {
+	border-color: #00ADB5;
+}
+
+.container-btn a.btn:nth-child(2):hover{
+	color: white;
+}
+
+.container-btn a.btn:nth-child(2):link {
+	border-color: #00ADB5;
+}
+
+ .container-btn a.btn:nth-child(2):hover {
+	background-color: #00ADB5;
+}
+
+.btn-solid:link {
+	color: var(--white-000);
+	background-color: var(--black-000);
+	border-color: var(--black-000);
+}
