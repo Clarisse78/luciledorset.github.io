@@ -61,3 +61,15 @@ header .col-text h2, .col-1 > h3 { line-height: 1.8 }
 	background-color: var(--black-000);
 	border-color: var(--black-000);
 }
+
+@media (min-width: 768px) {
+    .logo-main{
+		width:25%;
+	}
+}
+
+@media (max-width: 768px) {
+    .logo-main{
+		width:60%;
+	}
+}
