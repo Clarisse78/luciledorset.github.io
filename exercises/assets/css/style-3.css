@@ -290,3 +290,8 @@ section *:last-child { margin-bottom: 0 !important }
 .s-5{
     background-color: var(--purple-300);
 }
+
+
+.s-6{
+    background-color: var(--amber-400);
+}
