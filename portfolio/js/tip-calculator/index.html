@@ -190,6 +190,45 @@
 
     </footer>
 
+    <script>
+        //Hide the tip amount on load
+document.getElementById("tipDisplayBox").style.display = "none";
+document.getElementById("numOfPeople").value = 1;
+
+// Calculate tip
+function calculateTip() {
+   let billAmount = document.getElementById("billAmount").value;
+   let serviceQuality = document.getElementById("serviceQuality").value;
+   let numOfPeople = document.getElementById("numOfPeople").value;
+
+   // Validate input
+    if (billAmount === "" || serviceQuality == 0) {
+      alert("Please enter values");
+      return;
+   }
+
+   // Calculate tip
+   let tipTotal = (billAmount * serviceQuality);
+   // round to two decimal places
+   tipTotal = Math.round(tipTotal * 100) / 100;
+   // next line allows us to always have two digits after decimal point
+   tipTotal = tipTotal.toFixed(2);
+   // Display the tip
+   document.getElementById("tipDisplayBox").style.display = "block";
+   document.getElementById("tipTotal").innerHTML = tipTotal;
+   // Check to see if this input is empty or less than or equal to 1
+   if (numOfPeople === "" || parseInt(numOfPeople) <= 1)  {
+      numOfPeople = 1;
+      document.getElementById("numOfPeople").value = 1;
+      tipEach = tipTotal;
+   }
+  document.getElementById("tipEach").innerHTML = (tipTotal / numOfPeople).toFixed(2);
+}
+
+// click to call function
+document.getElementById("calculate").onclick = () => calculateTip();
+    </script>
+
     <script src="../assets/js/menu.js"></script>
 
 

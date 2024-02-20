@@ -200,6 +200,50 @@
 
     </footer>
 
+    <script>
+        let all_btns = document.querySelectorAll('#myTable .btn');
+
+all_btns.forEach(el => el.addEventListener('click', event => {
+   event.preventDefault();
+   // get button id
+   btn_id = event.currentTarget.id;
+   deleteRow(btn_id);
+}));
+
+
+function deleteRow(btn_id) {
+   const rows = document.querySelectorAll("#myTable tr");
+   for (let i = rows.length; i--;) {
+      if(rows[i].innerHTML.includes(btn_id)) {
+         rows[i].parentNode.removeChild(rows[i]);
+      }
+   }
+}
+
+const arrStudentData = [
+   {id: "1224", firstname: "John", lastname: "Smith"},
+   {id: "5678", firstname: "Jane", lastname: "Higgins"},
+   {id: "1717", firstname: "Frank", lastname: "Jones"},
+   {id: "2121", firstname: "Mary", lastname: "Dwyer"}
+];
+
+function populateTable(){
+   let tableContent = "";
+   let delBtn = "<a class=\"btn\" onclick=\"deleteRow(this)\"><i class=\"fa-solid fa-trash-can\"></i>Delete</a>";
+      for(var i in arrStudentData){
+         tableContent += "<tr>";
+         tableContent += "<td>" + arrStudentData[i].id +"</td>"
+            + "<td>" + arrStudentData[i].firstname +"</td>"
+            + "<td>" + arrStudentData[i].lastname +"</td>"
+            + "<td><a class=\"btn\" onclick=\"deleteRow("+arrStudentData[i].id+")\"><i class=\"fa-solid fa-trash-can\"></i>Delete</a></td>";
+            tableContent += "</tr>";
+       }
+
+   document.getElementById("studentData").innerHTML = tableContent;
+   document.getElementById("btn_populate").innerHTML = "Refresh Table <i class=\"fa-solid fa-circle-plus\"></i>";
+}
+    </script>
+
     <script src="../assets/js/menu.js"></script>
 
 

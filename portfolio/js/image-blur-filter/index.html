@@ -151,6 +151,23 @@
 
     </footer>
 
+    <script>
+        // Get controls
+const inputs = document.querySelectorAll('.controls input');
+
+// Attach event listeners
+inputs.forEach(input => input.addEventListener('change', handleUpdate));
+inputs.forEach(input => input.addEventListener('mousemove', handleUpdate));
+
+function handleUpdate() {
+   // dataset retrieves the suffix from the data object
+   const suffix = this.dataset.sizing || '';
+   // Set a style property (css variable from the page);
+   document.querySelector(".theme-js").style.setProperty(`--${this.name}`, this.value + suffix);
+}
+
+    </script>
+
     <script src="../assets/js/menu.js"></script>
 
 
