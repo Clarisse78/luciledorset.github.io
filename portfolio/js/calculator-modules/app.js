@@ -30,7 +30,7 @@ const calculator = {
       calculator.displayValue += dot;
     }
   }
-  
+
   function handleOperator(nextOperator) {
     const { firstOperand, displayValue, operator } = calculator;
     const inputValue = parseFloat(displayValue);
@@ -54,8 +54,6 @@ const calculator = {
     calculator.operator = nextOperator;
   }
   
-  
-  
   function resetCalculator() {
     calculator.displayValue = '0';
     calculator.firstOperand = null;
@@ -71,6 +69,7 @@ const calculator = {
   updateDisplay();
   
   const keys = document.querySelector('.calculator-keys');
+ 
   keys.addEventListener('click', event => {
     const { target } = event;
     if (!target.matches('button')) {
