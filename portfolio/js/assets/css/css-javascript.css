@@ -1,4 +1,4 @@
-.container-menu.menu-desktop { background-color: var(--gray-800) }
+/*.container-menu.menu-desktop { background-color: var(--gray-800) }
 .container-menu.menu-mobile { background-color: var(--gray-800) }
 .container-menu.menu-mobile ul.mobile-display { background-color: var(--gray-800) }
 .container-menu a:link { font-weight: 600 !important; color: var(--white-000) } 
@@ -13,7 +13,7 @@
 .container-menu a#btn-cta:active { background-color: var(--blue-400) }
 .container-menu a#btn-cta:focus,
 .container-menu a#btn-cta:hover,
-.container-menu a#btn-cta:active { border-color: var(--blue-400) }
+.container-menu a#btn-cta:active { border-color: var(--blue-400) }*/
 
 header.hero-block-js { 
     min-height: 200px !important;
@@ -35,7 +35,7 @@ header.hero-block-js .hero-text-container h1 {
     letter-spacing: -1px; 
 }
 
-header.hero-block-js .hero-text-container h1 span { color: var(--gray-700); font-weight: 600; }
+header.hero-block-js .hero-text-container h1 span { color: #00ADB5; font-weight: 600; }
 
 header.hero-block-js .hero-text-container h2 {
     font-size: calc(20px + (28 - 20) * ((100vw - 320px) / (1920 - 320)));

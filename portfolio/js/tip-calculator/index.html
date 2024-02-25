@@ -4,31 +4,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lucile Pelou | Front-end Developer| Tip Calculator Project</title>
+    <title>Lucile Pelou | IT Student| Tip Calculator Project - Lucile Pelou ID: 74526</title>
     <meta name="description" content="Calculates the tip for a restaurant bill based on the level of service and the number of customers.">
 
 	<!-- Stylesheets -->
+    <link rel="stylesheet" href="https://lunevedy.com/assets/2.0/css/lunevedy.min.css" />
+    <link rel="stylesheet" href="../../../assets/css/custom.css" />
     <link rel="stylesheet" href="../assets/css/lunadoge.min.css" />
     <link rel="stylesheet" href="../assets/css/css-javascript.css" />s
 
     <style>
 
         /* ============ Header Colours =============*/
-        header.hero-block-js { background-color: #f7df1e }
-        header.hero-block-js h1 { color: #222 }
-        header.hero-block-js h2 { color: var(--gray-700) }
+        header.hero-block-js { background-color: #2d3748; }
+        header.hero-block-js h1 { color: white }
+        header.hero-block-js h2 { color: whitesmoke }
 
         /* Main Colours */
 
-        main {
-            background-image:#ff0000; background-image:
-            radial-gradient(at 40% 20%, hsla(28,100%,74%,1) 0, transparent 50%),
-            radial-gradient(at 80% 0%, hsla(189,100%,56%,1) 0, transparent 50%),
-            radial-gradient(at 0% 50%, hsla(355,85%,93%,1) 0, transparent 50%),
-            radial-gradient(at 80% 50%, hsla(340,100%,76%,1) 0, transparent 50%),
-            radial-gradient(at 0% 100%, hsla(22,100%,77%,1) 0, transparent 50%),
-            radial-gradient(at 80% 100%, hsla(242,100%,70%,1) 0, transparent 50%),
-            radial-gradient(at 0% 0%, hsla(343,100%,76%,1) 0, transparent 50%);
+        .main {
+            background-image:#ff0000; background-color:#393E46;
         }
         .theme-js .col-2 { background-color: var(--green-100) }
         .theme-js h3 { color: #222 }
@@ -50,7 +45,7 @@
             width: 100%;
             max-width: 800px;
             margin: 0 auto;
-            background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2));
+            background-color: white;
         }
 
         .bg-lightblue {
@@ -76,15 +71,17 @@
             display: block;
             padding: 18px 24px;
             border: 1px none #000;
-            background-color: blue;
+            background-color: #00ADB5;
             transition: all 350ms ease;
             color: #fff;
             font-size: 20px;
             line-height: 1;
             margin-top: 32px;
             border-radius: 50px;
+            border:solid;
         }
-        .btn:hover {background-color: darkblue }
+        .btn:hover {background-color: transparent;
+        color: #00ADB5; }
 
         .btn i { margin-right: 16px }
 
@@ -102,19 +99,26 @@
 
     <!-- navigation menu -->
 
-    <nav class="container-menu menu-desktop menu-sticky">
-        <a href="../../../index.html"><img src="../../../assets/img/logo3-min.png" alt="Sample website logo"></a>
-        <ul class="">
-            <li><a href="../../../index.html">Home</a></li>
-            <li><a href="../../../portfolio/index.html">Portfolio</a></li>
-            <li><a href="../../../contact/index.html" id="btn-cta"><span>Contact</span><i class="fas fa-arrow-right"></i></a></li>
-        </ul>
-        <div class="item-icon">
-            <div class="bar1"></div>
-            <div class="bar2"></div>
-            <div class="bar3"></div>
-        </div>
-    </nav>
+    <nav class="theme-dark"><div class="container-menu">
+        <a href="#" class="brand">
+            <img src="../../../assets/img/logo3-min.png" class="logo-main" alt="Sample website logo">
+        </a>
+    
+        <div class="container-menu-links">
+    
+            <div class="nav-toggle" id="nav-toggle-btn" style="background:#222831;">
+                <div class="bar-1"></div>
+                <div class="bar-2"></div>
+                <div class="bar-3"></div>
+            </div>
+    
+            <ul class="links-wrapper">
+                <li><a href="../../../index.html">Home</a></li>
+                <li><a href="../../index.html">Portfolio</a></li>
+                <li><a href="../../../store/index.html">Store</a></li>
+                <li><a class="btn btn-solid btn-soft" id="btn-cta" href="../../../contact/index.html"><span>Contact</span> <i class="fa-regular fa-envelope"></i></a></li>
+            </ul>
+        </div></div></nav>
 
     <!-- header hero block -->
     <header class="hero-block hero-block-js">
@@ -127,13 +131,13 @@
     <!-- main content with sections -->
     <main>
 
-        <section class="container-flex theme-js" id="conta">
+        <section class="container-flex theme-js" id="conta" style="background-color: #393E46;">
 
             <div class="bg-gray">
                 <form>
                 <p>How much was your bill?</p>
 
-                    €&nbsp;<input id="billAmount" type="text" placeholder="Bill Amount"></p>
+                    €&nbsp;<input id="billAmount" type="text" placeholder="Bill Amount">
 
                     <p>How was your service?</p> <select id="serviceQuality">
                         <option disabled selected value="0">-- Choose an Option --</option>
@@ -169,26 +173,28 @@
 
 
     <!-- footer -->
-	<footer>
+	<footer class="theme-dark text-center-desktop text-center-mobile">
 
 		<h2>Lucile Pelou</h2>
 
-		<h3>Excellence in digital creation</h3>
+		<h3>IT Student</h3>
 
 		<ul class="footer-links">
 			<li><a href="../../../index.html">Home</a></li>
-			<li><a href="../../../portfolio/index.html">Portfolio</a></li>
-			<li><a href="../../../contact/index.html">Contact</a></li>
+			<li><a href="../../index.html">Portfolio</a></li>
+			<li><a href="../../../store/index.html">Store</a></li>
+            <li><a href="../../../contact/index.html">Contact</a></li>
 		</ul>
 
 		<ul class="footer-icons">
 			<li><a href="https://www.linkedin.com/in/lucile-pelou-930aa4252/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
 			<li><a href="https://github.com/Clarisse78" target="_blank"><i class="fab fa-github-square"></i></a></li>
+            <li><a href="https://discord.com/users/377784448243990538" target="_blank"><i class="fa-brands fa-discord"></i></a></li>
 		</ul>
 
-		<p class="index.html"> <a href="../../../privacy.html" style="color: #fff; background-color:transparent;">Privacy &amp; Legal</a> </p>
+		<p class="privacy"><a href="../../../privacy.html">Privacy &amp; Legal</a></p>
 
-    </footer>
+	</footer>
 
     <script>
         //Hide the tip amount on load
