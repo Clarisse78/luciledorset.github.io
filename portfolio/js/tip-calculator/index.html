@@ -1,42 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lucile Pelou | IT Student| Tip Calculator Project - Lucile Pelou ID: 74526</title>
-    <meta name="description" content="Calculates the tip for a restaurant bill based on the level of service and the number of customers.">
+    <meta name="description"
+        content="Calculates the tip for a restaurant bill based on the level of service and the number of customers.">
 
-	<!-- Stylesheets -->
+    <!-- Stylesheets -->
     <link rel="stylesheet" href="https://lunevedy.com/assets/2.0/css/lunevedy.min.css" />
     <link rel="stylesheet" href="../../../assets/css/custom.css" />
     <link rel="stylesheet" href="../assets/css/lunadoge.min.css" />
     <link rel="stylesheet" href="../assets/css/css-javascript.css" />s
 
-    <style>
+    <link rel="apple-touch-icon" sizes="180x180" href="../../../assets/img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../../assets/img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../../assets/img/favicon-16x16.png">
+    <link rel="manifest" href="../../../assets/img/site.webmanifest">
 
+    <style>
         /* ============ Header Colours =============*/
-        header.hero-block-js { background-color: #2d3748; }
-        header.hero-block-js h1 { color: white }
-        header.hero-block-js h2 { color: whitesmoke }
+        header.hero-block-js {
+            background-color: #2d3748;
+        }
+
+        header.hero-block-js h1 {
+            color: white
+        }
+
+        header.hero-block-js h2 {
+            color: whitesmoke
+        }
 
         /* Main Colours */
 
         .main {
-            background-image:#ff0000; background-color:#393E46;
+            background-image: #ff0000;
+            background-color: #393E46;
         }
-        .theme-js .col-2 { background-color: var(--green-100) }
-        .theme-js h3 { color: #222 }
-        .theme-js p { color: #222 }
+
+        .theme-js .col-2 {
+            background-color: var(--green-100)
+        }
+
+        .theme-js h3 {
+            color: #222
+        }
+
+        .theme-js p {
+            color: #222
+        }
 
         /* Button Colours: passive state */
         .theme-js a.btn {
-            color: #fff; background-color: blue; transition: 0.2s;
+            color: #fff;
+            background-color: blue;
+            transition: 0.2s;
             border-radius: 6px
         }
 
-        .theme-js a.btn { background-image: linear-gradient(to right,#e052a0,#f15c41) }
-        .theme-js a.btn:hover { filter: brightness(140%) saturate(140%) }
+        .theme-js a.btn {
+            background-image: linear-gradient(to right, #e052a0, #f15c41)
+        }
+
+        .theme-js a.btn:hover {
+            filter: brightness(140%) saturate(140%)
+        }
 
         /* ========= ENDS CUSTOM CSS FOR WEB PAGE ======= */
 
@@ -55,17 +86,30 @@
             max-width: 800px;
             margin: 0 auto;
         }
+
         .bg-lightblue p {
             font-size: 22px
         }
 
 
-        form { font-size: 18px }
+        form {
+            font-size: 18px
+        }
 
-        form p { margin-bottom: 12px }
-        input, select { font-size: 18px; padding: 4px; margin-bottom: 18px }
+        form p {
+            margin-bottom: 12px
+        }
 
-        select { font-size: 16px}
+        input,
+        select {
+            font-size: 18px;
+            padding: 4px;
+            margin-bottom: 18px
+        }
+
+        select {
+            font-size: 16px
+        }
 
         .btn {
             display: block;
@@ -78,19 +122,23 @@
             line-height: 1;
             margin-top: 32px;
             border-radius: 50px;
-            border:solid;
+            border: solid;
         }
-        .btn:hover {background-color: transparent;
-        color: #00ADB5; }
 
-        .btn i { margin-right: 16px }
+        .btn:hover {
+            background-color: transparent;
+            color: #00ADB5;
+        }
 
-
-
+        .btn i {
+            margin-right: 16px
+        }
     </style>
 
-	<!-- Font Awesome 6.1 icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Font Awesome 6.1 icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 </head>
 
@@ -99,32 +147,38 @@
 
     <!-- navigation menu -->
 
-    <nav class="theme-dark"><div class="container-menu">
-        <a href="#" class="brand">
-            <img src="../../../assets/img/logo3-min.png" class="logo-main" alt="Sample website logo">
-        </a>
-    
-        <div class="container-menu-links">
-    
-            <div class="nav-toggle" id="nav-toggle-btn" style="background:#222831;">
-                <div class="bar-1"></div>
-                <div class="bar-2"></div>
-                <div class="bar-3"></div>
+    <nav class="theme-dark">
+        <div class="container-menu">
+            <a href="#" class="brand">
+                <img src="../../../assets/img/logo3-min.png" class="logo-main" alt="Sample website logo">
+            </a>
+
+            <div class="container-menu-links">
+
+                <div class="nav-toggle" id="nav-toggle-btn" style="background:#222831;">
+                    <div class="bar-1"></div>
+                    <div class="bar-2"></div>
+                    <div class="bar-3"></div>
+                </div>
+
+                <ul class="links-wrapper">
+                    <li><a href="../../../index.html">Home</a></li>
+                    <li><a href="../../index.html">Portfolio</a></li>
+                    <li><a href="../../../store/index.html">Store</a></li>
+                    <li><a class="btn btn-solid btn-soft" id="btn-cta"
+                            href="../../../contact/index.html"><span>Contact</span> <i
+                                class="fa-regular fa-envelope"></i></a></li>
+                </ul>
             </div>
-    
-            <ul class="links-wrapper">
-                <li><a href="../../../index.html">Home</a></li>
-                <li><a href="../../index.html">Portfolio</a></li>
-                <li><a href="../../../store/index.html">Store</a></li>
-                <li><a class="btn btn-solid btn-soft" id="btn-cta" href="../../../contact/index.html"><span>Contact</span> <i class="fa-regular fa-envelope"></i></a></li>
-            </ul>
-        </div></div></nav>
+        </div>
+    </nav>
 
     <!-- header hero block -->
     <header class="hero-block hero-block-js">
         <div class="hero-text-container">
             <h1>Tip Calculator <span>JavaScript Project</span></h1>
-            <h2>Calculates the tip for a restaurant bill based on the level of service and the number of customers. View my complete collection of <a href="../index.html">JavaScript projects</a>.</h2>
+            <h2>Calculates the tip for a restaurant bill based on the level of service and the number of customers. View
+                my complete collection of <a href="../index.html">JavaScript projects</a>.</h2>
         </div>
     </header>
 
@@ -135,7 +189,7 @@
 
             <div class="bg-gray">
                 <form>
-                <p>How much was your bill?</p>
+                    <p>How much was your bill?</p>
 
                     €&nbsp;<input id="billAmount" type="text" placeholder="Bill Amount">
 
@@ -152,15 +206,16 @@
                     4" style="width: 32px"> &nbsp;people
                 </form>
 
-                <button type="button" class="btn" id="calculate"> <i class="fa-solid fa-calculator"></i>Calculate Tip</button>
-        </div>
-        <!--calculator end-->
+                <button type="button" class="btn" id="calculate"> <i class="fa-solid fa-calculator"></i>Calculate
+                    Tip</button>
+            </div>
+            <!--calculator end-->
 
-        <!--totalTip -->
-        <div id="tipDisplayBox" class="bg-lightblue">
-            <p>Total tip: €<span id="tipTotal"></span></p>
-            <p>Tip each: <b>€<span id="tipEach"></span></b></p>
-        </div>
+            <!--totalTip -->
+            <div id="tipDisplayBox" class="bg-lightblue">
+                <p>Total tip: €<span id="tipTotal"></span></p>
+                <p>Tip each: <b>€<span id="tipEach"></span></b></p>
+            </div>
 
         </section>
 
@@ -173,76 +228,73 @@
 
 
     <!-- footer -->
-	<footer class="theme-dark text-center-desktop text-center-mobile">
+    <footer class="theme-dark text-center-desktop text-center-mobile">
 
-		<h2>Lucile Pelou</h2>
+        <h2>Lucile Pelou</h2>
 
-		<h3>IT Student</h3>
+        <h3>IT Student</h3>
 
-		<ul class="footer-links">
-			<li><a href="../../../index.html">Home</a></li>
-			<li><a href="../../index.html">Portfolio</a></li>
-			<li><a href="../../../store/index.html">Store</a></li>
+        <ul class="footer-links">
+            <li><a href="../../../index.html">Home</a></li>
+            <li><a href="../../index.html">Portfolio</a></li>
+            <li><a href="../../../store/index.html">Store</a></li>
             <li><a href="../../../contact/index.html">Contact</a></li>
-		</ul>
+        </ul>
 
-		<ul class="footer-icons">
-			<li><a href="https://www.linkedin.com/in/lucile-pelou-930aa4252/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
-			<li><a href="https://github.com/Clarisse78" target="_blank"><i class="fab fa-github-square"></i></a></li>
-            <li><a href="https://discord.com/users/377784448243990538" target="_blank"><i class="fa-brands fa-discord"></i></a></li>
-		</ul>
+        <ul class="footer-icons">
+            <li><a href="https://www.linkedin.com/in/lucile-pelou-930aa4252/" target="_blank"><i
+                        class="fab fa-linkedin"></i></a></li>
+            <li><a href="https://github.com/Clarisse78" target="_blank"><i class="fab fa-github-square"></i></a></li>
+            <li><a href="https://discord.com/users/377784448243990538" target="_blank"><i
+                        class="fa-brands fa-discord"></i></a></li>
+        </ul>
 
-		<p class="privacy"><a href="../../../privacy.html">Privacy &amp; Legal</a></p>
+        <p class="privacy"><a href="../../../privacy.html">Privacy &amp; Legal</a></p>
 
-	</footer>
+    </footer>
 
     <script>
         //Hide the tip amount on load
-document.getElementById("tipDisplayBox").style.display = "none";
-document.getElementById("numOfPeople").value = 1;
+        document.getElementById("tipDisplayBox").style.display = "none";
+        document.getElementById("numOfPeople").value = 1;
 
-// Calculate tip
-function calculateTip() {
-   let billAmount = document.getElementById("billAmount").value;
-   let serviceQuality = document.getElementById("serviceQuality").value;
-   let numOfPeople = document.getElementById("numOfPeople").value;
+        // Calculate tip
+        function calculateTip() {
+            let billAmount = document.getElementById("billAmount").value;
+            let serviceQuality = document.getElementById("serviceQuality").value;
+            let numOfPeople = document.getElementById("numOfPeople").value;
 
-   // Validate input
-    if (billAmount === "" || serviceQuality == 0) {
-      alert("Please enter values");
-      return;
-   }
+            // Validate input
+            if (billAmount === "" || serviceQuality == 0) {
+                alert("Please enter values");
+                return;
+            }
 
-   // Calculate tip
-   let tipTotal = (billAmount * serviceQuality);
-   // round to two decimal places
-   tipTotal = Math.round(tipTotal * 100) / 100;
-   // next line allows us to always have two digits after decimal point
-   tipTotal = tipTotal.toFixed(2);
-   // Display the tip
-   document.getElementById("tipDisplayBox").style.display = "block";
-   document.getElementById("tipTotal").innerHTML = tipTotal;
-   // Check to see if this input is empty or less than or equal to 1
-   if (numOfPeople === "" || parseInt(numOfPeople) <= 1)  {
-      numOfPeople = 1;
-      document.getElementById("numOfPeople").value = 1;
-      tipEach = tipTotal;
-   }
-  document.getElementById("tipEach").innerHTML = (tipTotal / numOfPeople).toFixed(2);
-}
+            // Calculate tip
+            let tipTotal = (billAmount * serviceQuality);
+            // round to two decimal places
+            tipTotal = Math.round(tipTotal * 100) / 100;
+            // next line allows us to always have two digits after decimal point
+            tipTotal = tipTotal.toFixed(2);
+            // Display the tip
+            document.getElementById("tipDisplayBox").style.display = "block";
+            document.getElementById("tipTotal").innerHTML = tipTotal;
+            // Check to see if this input is empty or less than or equal to 1
+            if (numOfPeople === "" || parseInt(numOfPeople) <= 1) {
+                numOfPeople = 1;
+                document.getElementById("numOfPeople").value = 1;
+                tipEach = tipTotal;
+            }
+            document.getElementById("tipEach").innerHTML = (tipTotal / numOfPeople).toFixed(2);
+        }
 
-// click to call function
-document.getElementById("calculate").onclick = () => calculateTip();
+        // click to call function
+        document.getElementById("calculate").onclick = () => calculateTip();
     </script>
 
     <script src="../assets/js/menu.js"></script>
 
 
 </body>
+
 </html>
-
-
-
-
-
-

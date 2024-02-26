@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,40 +8,75 @@
     <title>Lucile Pelou | IT Student | JavaScript Image Slider Project - Lucile Pelou ID: 74526</title>
     <meta name="description" content="A sample collection of my recent JavaScript projects.">
 
-	<!-- Stylesheets -->
+    <!-- Stylesheets -->
     <link rel="stylesheet" href="https://lunevedy.com/assets/2.0/css/lunevedy.min.css" />
     <link rel="stylesheet" href="../../../assets/css/custom.css" />
     <link rel="stylesheet" href="../assets/css/lunadoge.min.css" />
     <link rel="stylesheet" href="../assets/css/css-javascript.css" />
+
+    <link rel="apple-touch-icon" sizes="180x180" href="../../../assets/img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../../assets/img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../../assets/img/favicon-16x16.png">
+    <link rel="manifest" href="../../../assets/img/site.webmanifest">
+
     <style>
-
-
         /* ============ Header Colours =============*/
-        header.hero-block-js { background-color: #2d3748; }
-        header.hero-block-js h1 { color: white }
-        header.hero-block-js h2 { color: whitesmoke }
+        header.hero-block-js {
+            background-color: #2d3748;
+        }
+
+        header.hero-block-js h1 {
+            color: white
+        }
+
+        header.hero-block-js h2 {
+            color: whitesmoke
+        }
 
         /* Main Colours */
         .theme-js {
-            background-image:#ff0000; background-color:#393E46;
+            background-image: #ff0000;
+            background-color: #393E46;
         }
 
-        .theme-js .col-2 { background-color: var(--green-100) }
-        .theme-js h3 { color: #222 }
-        .theme-js p { color: #222 }
+        .theme-js .col-2 {
+            background-color: var(--green-100)
+        }
+
+        .theme-js h3 {
+            color: #222
+        }
+
+        .theme-js p {
+            color: #222
+        }
 
         /* Button Colours: passive state */
         .theme-js a.btn {
-            color: #fff; background-color: blue; transition: 0.2s;
+            color: #fff;
+            background-color: blue;
+            transition: 0.2s;
             border-radius: 6px
         }
 
         /* Button Colours: active state */
-        .theme-js a.btn:hover { background-color: darkblue }
+        .theme-js a.btn:hover {
+            background-color: darkblue
+        }
 
-        .theme-js a.btn { background-image: linear-gradient(to right,#e052a0,#f15c41) }
-        .theme-js a.btn:hover { filter: brightness(140%) saturate(140%) }
-        .container-slider { width: 100%; padding: 0 15px; margin: 0 auto }
+        .theme-js a.btn {
+            background-image: linear-gradient(to right, #e052a0, #f15c41)
+        }
+
+        .theme-js a.btn:hover {
+            filter: brightness(140%) saturate(140%)
+        }
+
+        .container-slider {
+            width: 100%;
+            padding: 0 15px;
+            margin: 0 auto
+        }
 
         .container-outer {
             max-width: 1140px;
@@ -68,23 +104,36 @@
         }
 
         @media (max-width: 767px) {
-            .container-img { min-height: 30vh }
+            .container-img {
+                min-height: 30vh
+            }
         }
 
-        .btn-left, .btn-right {
-            position: absolute; top: 50%;
-            background: blue; color: #fff;
+        .btn-left,
+        .btn-right {
+            position: absolute;
+            top: 50%;
+            background: blue;
+            color: #fff;
             font-size: 1.2rem;
             border: 0.2rem solid blue;
         }
 
-        .btn-left { left: 0; transform: translate(-50%, -50%) }
-        .btn-right { right: 0; transform: translate(50%, -50%); }
+        .btn-left {
+            left: 0;
+            transform: translate(-50%, -50%)
+        }
 
+        .btn-right {
+            right: 0;
+            transform: translate(50%, -50%);
+        }
     </style>
 
-	<!-- Font Awesome 6.1 icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Font Awesome 6.1 icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 </head>
 
@@ -93,32 +142,38 @@
 
     <!-- navigation menu -->
 
-    <nav class="theme-dark"><div class="container-menu">
-        <a href="#" class="brand">
-            <img src="../../../assets/img/logo3-min.png" class="logo-main" alt="Sample website logo">
-        </a>
-    
-        <div class="container-menu-links">
-    
-            <div class="nav-toggle" id="nav-toggle-btn" style="background:#222831;">
-                <div class="bar-1"></div>
-                <div class="bar-2"></div>
-                <div class="bar-3"></div>
+    <nav class="theme-dark">
+        <div class="container-menu">
+            <a href="#" class="brand">
+                <img src="../../../assets/img/logo3-min.png" class="logo-main" alt="Sample website logo">
+            </a>
+
+            <div class="container-menu-links">
+
+                <div class="nav-toggle" id="nav-toggle-btn" style="background:#222831;">
+                    <div class="bar-1"></div>
+                    <div class="bar-2"></div>
+                    <div class="bar-3"></div>
+                </div>
+
+                <ul class="links-wrapper">
+                    <li><a href="../../../index.html">Home</a></li>
+                    <li><a href="../../index.html">Portfolio</a></li>
+                    <li><a href="../../../store/index.html">Store</a></li>
+                    <li><a class="btn btn-solid btn-soft" id="btn-cta"
+                            href="../../../contact/index.html"><span>Contact</span> <i
+                                class="fa-regular fa-envelope"></i></a></li>
+                </ul>
             </div>
-    
-            <ul class="links-wrapper">
-                <li><a href="../../../index.html">Home</a></li>
-                <li><a href="../../index.html">Portfolio</a></li>
-                <li><a href="../../../store/index.html">Store</a></li>
-                <li><a class="btn btn-solid btn-soft" id="btn-cta" href="../../../contact/index.html"><span>Contact</span> <i class="fa-regular fa-envelope"></i></a></li>
-            </ul>
-        </div></div></nav>
+        </div>
+    </nav>
 
     <!-- header hero block -->
     <header class="hero-block hero-block-js">
         <div class="hero-text-container">
             <h1>Image Slideshow <span>JavaScript Project</span></h1>
-            <h2>A slideshow based on an array of images of Dublin city, Ireland. View my complete collection of <a href="../index.html">JavaScript projects</a>.</h2>
+            <h2>A slideshow based on an array of images of Dublin city, Ireland. View my complete collection of <a
+                    href="../index.html">JavaScript projects</a>.</h2>
         </div>
     </header>
 
@@ -131,8 +186,8 @@
                 <div class="container-outer">
                     <div class="container-img">
 
-                    <a class="btn btn-left"><i class="fas fa-caret-left"></i></a>
-                    <a class="btn btn-right"><i class="fas fa-caret-right"></i></a>
+                        <a class="btn btn-left"><i class="fas fa-caret-left"></i></a>
+                        <a class="btn btn-right"><i class="fas fa-caret-right"></i></a>
 
                     </div>
                 </div>
@@ -148,78 +203,75 @@
 
 
     <!-- footer -->
-	<footer class="theme-dark text-center-desktop text-center-mobile">
+    <footer class="theme-dark text-center-desktop text-center-mobile">
 
-		<h2>Lucile Pelou</h2>
+        <h2>Lucile Pelou</h2>
 
-		<h3>IT Student</h3>
+        <h3>IT Student</h3>
 
-		<ul class="footer-links">
-			<li><a href="../../../index.html">Home</a></li>
-			<li><a href="../../index.html">Portfolio</a></li>
-			<li><a href="../../../store/index.html">Store</a></li>
+        <ul class="footer-links">
+            <li><a href="../../../index.html">Home</a></li>
+            <li><a href="../../index.html">Portfolio</a></li>
+            <li><a href="../../../store/index.html">Store</a></li>
             <li><a href="../../../contact/index.html">Contact</a></li>
-		</ul>
+        </ul>
 
-		<ul class="footer-icons">
-			<li><a href="https://www.linkedin.com/in/lucile-pelou-930aa4252/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
-			<li><a href="https://github.com/Clarisse78" target="_blank"><i class="fab fa-github-square"></i></a></li>
-            <li><a href="https://discord.com/users/377784448243990538" target="_blank"><i class="fa-brands fa-discord"></i></a></li>
-		</ul>
+        <ul class="footer-icons">
+            <li><a href="https://www.linkedin.com/in/lucile-pelou-930aa4252/" target="_blank"><i
+                        class="fab fa-linkedin"></i></a></li>
+            <li><a href="https://github.com/Clarisse78" target="_blank"><i class="fab fa-github-square"></i></a></li>
+            <li><a href="https://discord.com/users/377784448243990538" target="_blank"><i
+                        class="fa-brands fa-discord"></i></a></li>
+        </ul>
 
-		<p class="privacy"><a href="../../../privacy.html">Privacy &amp; Legal</a></p>
+        <p class="privacy"><a href="../../../privacy.html">Privacy &amp; Legal</a></p>
 
-	</footer>
+    </footer>
 
     <script>
-        (function() {
-   const pictures = [
-      "dublin-0",
-      "dublin-1",
-      "dublin-2",
-      "dublin-3",
-      "dublin-4",
-      "dublin-5"
-];
+        (function () {
+            const pictures = [
+                "dublin-0",
+                "dublin-1",
+                "dublin-2",
+                "dublin-3",
+                "dublin-4",
+                "dublin-5"
+            ];
 
-// Select both left and right button. Add event listeners
-const buttons = document.querySelectorAll('.btn')
-const imageDIV = document.querySelector('.container-img')
-let counter = 0
+            // Select both left and right button. Add event listeners
+            const buttons = document.querySelectorAll('.btn')
+            const imageDIV = document.querySelector('.container-img')
+            let counter = 0
 
-buttons.forEach(function(button){
-   button.addEventListener('click', function(e) {
+            buttons.forEach(function (button) {
+                button.addEventListener('click', function (e) {
 
-      if (button.classList.contains('btn-left')) {
-         counter--;
-         if (counter < 0) {
-            counter = pictures.length - 1;
-         }
-         imageDIV.style.backgroundImage = `url('assets/img/${pictures[counter]}.jpg')`
-         console.log(imageDIV.style.backgroundImage = `url('assets/img/${pictures[counter]}.jpg')`)
-      }
+                    if (button.classList.contains('btn-left')) {
+                        counter--;
+                        if (counter < 0) {
+                            counter = pictures.length - 1;
+                        }
+                        imageDIV.style.backgroundImage = `url('assets/img/${pictures[counter]}.jpg')`
+                        console.log(imageDIV.style.backgroundImage = `url('assets/img/${pictures[counter]}.jpg')`)
+                    }
 
-      if (button.classList.contains('btn-right')) {
-         counter++;
-         if (counter > pictures.length - 1) {
-         counter = 0;
-      }
-      imageDIV.style.backgroundImage = `url('assets/img/${pictures[counter]}.jpg')`
-      console.log(imageDIV.style.backgroundImage = `url('assets/img/${pictures[counter]}.jpg')`)
-      }
-    }) // Ends loop for left and right arrows
-   })
-})();
+                    if (button.classList.contains('btn-right')) {
+                        counter++;
+                        if (counter > pictures.length - 1) {
+                            counter = 0;
+                        }
+                        imageDIV.style.backgroundImage = `url('assets/img/${pictures[counter]}.jpg')`
+                        console.log(imageDIV.style.backgroundImage = `url('assets/img/${pictures[counter]}.jpg')`)
+                    }
+                }) // Ends loop for left and right arrows
+            })
+        })();
     </script>
 
     <script src="../assets/js/menu.js"></script>
 
 
 </body>
+
 </html>
-
-
-
-
-
-

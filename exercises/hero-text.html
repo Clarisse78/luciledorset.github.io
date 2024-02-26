@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,12 +12,16 @@
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-J6JTHBCPGF"></script>
     <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
 
-    gtag('config', 'G-J6JTHBCPGF');
+        gtag('config', 'G-J6JTHBCPGF');
     </script>
+
+
+    <!-- Styles for Cookie Consent Popup Message  -->
+    <link href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" rel="stylesheet">
 </head>
 
 
@@ -32,9 +37,27 @@
 
     </header>
     <!-- /hero block -->
- 
- 
+
+
     <p style="text-align: center;"><a href="exercices.html">Back to Exercices page</a></p>
 
+    <!-- JavaScript for Cookie Consent Popup Message -->
+    <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
+    <script>
+        window.cookieconsent.initialise({
+            "palette": {
+                "popup": {
+                    "background": "#000"
+                },
+                "button": {
+                    "background": "#f1d600"
+                }
+            },
+            "content": {
+                "href": "https://clarisse78.github.io/luciledorset.github.io/privacy.html"
+            }
+        });
+    </script>
 </body>
+
 </html>
