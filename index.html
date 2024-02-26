@@ -102,9 +102,20 @@
         </div>
 
         <div class="col-2 col-visual">
-            <figure>
+            <!--<figure>
                 <img class="main-img" src="assets/img/lucile_cri_petit-min.png" alt="Lucile Pelou">
-            </figure>
+            </figure>-->
+            <picture>
+                <!-- Source pour les écrans larges -->
+                <source class="main-img" media="(min-width: 768px)" srcset="assets/img/lucile_cri_petit-min.png">
+
+                <!-- Source pour les téléphones -->
+                <source class="main-img" media="(max-width: 767px)" srcset="assets/img/android-chrome-192x192.png">
+
+                <!-- Image de secours pour les navigateurs ne prenant pas en charge la balise picture -->
+                <img class="main-img" src="assets/img/lucile_cri_petit-min.png" alt="Lucile Pelou">
+            </picture>
+
         </div>
 
     </header>
