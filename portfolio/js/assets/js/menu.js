@@ -21,9 +21,10 @@ function checkViewportWidth() {
 window.onresize = checkViewportWidth;
 
 // Show/hide fly-out mobile menu
+/*
 if (document.querySelector('.container-menu')) {
     document.querySelector('.item-icon').addEventListener('click', toggleMobileMenu)
-}
+}*/
 
 function toggleMobileMenu() {
     //toggle hamburger icon
@@ -38,7 +39,7 @@ function toggleMobileMenu() {
         elemMenuList.classList.add('mobile-display');
         elemMenu.classList.add('menu-on-scroll');
         elemHTML.classList.add('no-scroll');
-    }    
+    }
     //if fly-out menu is currently open, close it.
     else {
         elemMenuList.classList.remove('mobile-display');
@@ -49,18 +50,18 @@ function toggleMobileMenu() {
 
 // On-scroll colours
 if (document.querySelector('.container-menu')) {
-    window.onscroll = function() {swapMenuStyle()};
+    window.onscroll = function () { swapMenuStyle() };
     const el_menu = document.querySelector('.container-menu');
-    const el_menu_onscroll = el_menu.offsetTop +300;
+    const el_menu_onscroll = el_menu.offsetTop + 300;
 }
 
 function swapMenuStyle() {
     if (document.querySelector('.container-menu')) {
         const el_menu = document.querySelector('.container-menu');
-        const el_menu_onscroll = el_menu.offsetTop +300;
-        if ( window.pageYOffset > el_menu_onscroll) {
+        const el_menu_onscroll = el_menu.offsetTop + 300;
+        if (window.pageYOffset > el_menu_onscroll) {
             el_menu.classList.add("menu-on-scroll");
-        } 
+        }
         else {
             el_menu.classList.remove("menu-on-scroll")
         }
