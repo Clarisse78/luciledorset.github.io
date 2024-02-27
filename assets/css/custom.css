@@ -92,3 +92,11 @@ header .col-text h2,
 	width: 80%;
 	max-width: 500px;
 }
+
+* {
+	font-family: "Roboto", sans-serif;
+}
+
+.anta {
+	font-family: "Anta", sans-serif;
+}
