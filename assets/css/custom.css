@@ -100,3 +100,31 @@ header .col-text h2,
 .anta {
 	font-family: "Anta", sans-serif;
 }
+
+.desc-main {
+	line-height: 1.8;
+	font-size: var(--font-size-md);
+	letter-spacing: 0;
+	color: var(--white-000);
+	margin-top: 32px;
+	font-weight: 500;
+}
+
+@media (max-width: 767px) {
+	.desc-main {
+		margin-bottom: 6px;
+	}
+}
+
+@media (min-width: 768px) {
+	.desc-main {
+		margin-bottom: 20px;
+	}
+}
+
+
+@media (max-width: 413px) {
+	.desc-main {
+		margin-top: 22px;
+	}
+}
