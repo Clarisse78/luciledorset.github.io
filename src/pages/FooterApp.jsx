@@ -33,7 +33,7 @@ const FooterApp = () => {
           </div>
         </div>
         <p className="privacy pb-11">
-          <Footer.Link style={{ textDecoration: 'underline', textUnderlineOffset: '0.2em', color: "#35AADF", fontSize: "20px" }} href="privacy.html">Privacy &amp; Legal</Footer.Link>
+          <Footer.Link style={{ textDecoration: 'underline', textUnderlineOffset: '0.2em', color: "#35AADF", fontSize: "20px" }} href="https://clarisse78.github.io/WebDesignPortfolio/privacy.html">Privacy &amp; Legal</Footer.Link>
         </p>
       </div>
     </Footer>
