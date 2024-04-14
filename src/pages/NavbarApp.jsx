@@ -10,7 +10,7 @@ function NavbarApp() {
       <Navbar.Brand>
         <Link to="/" className="pl-10">
           <img
-            src="/images/logo3-min.png"
+            src="images/logo3-min.png"
             className="logo-main"
             alt="Sample website logo"
           />
