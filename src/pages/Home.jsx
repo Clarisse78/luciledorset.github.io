@@ -4,6 +4,8 @@ import Typography from '@mui/material/Typography';
 import Badge from '@mui/material/Badge';
 import { Link } from "react-router-dom";
 import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt';
+import FolderOpenIcon from '@mui/icons-material/FolderOpen';
+import LocalPostOfficeIcon from '@mui/icons-material/LocalPostOffice';
 
 const Home = () => {
   return (
@@ -28,11 +30,13 @@ const Home = () => {
               I am an innovative IT student who loves to learn new things and build creatives interfaces.
             </Typography>
             <Box sx={{ display: 'flex', gap: '1rem', flex: '1' }}>
-              <Button variant="contained" sx={{ backgroundColor: '#00ADB5' }}>
+              <Button variant="contained" className="button-cus" sx={{ backgroundColor: '#00ADB5' }}>
                 <Link to="/portfolio" style={{ color: 'white', textDecoration: 'none' }}>View my work</Link>
+                <FolderOpenIcon sx={{ marginLeft: "10px" }}></FolderOpenIcon>
               </Button>
               <Button variant="outlined" sx={{ backgroundColor: '#00ADB5' }} >
                 <Link to="/contact">Get in touch</Link>
+                <LocalPostOfficeIcon sx={{ marginLeft: "10px" }}></LocalPostOfficeIcon>
               </Button>
             </Box>
           </Box>
@@ -97,7 +101,6 @@ const Home = () => {
             <Button variant="solid" color="soft" href="https://clarisse78.github.io/Lexia/" style={{ backgroundColor: 'white', color: 'black', border: '1px solid black', width: "fit-content", fontWeight: "bold", marginTop: "2%" }}>
               <Typography sx={{ fontSize: "18px", fontWeight: "600" }}>View project</Typography>
               <ArrowRightAltIcon sx={{ paddingLeft: "2%" }}></ArrowRightAltIcon>
-
             </Button>
           </Box>
         </Box>
