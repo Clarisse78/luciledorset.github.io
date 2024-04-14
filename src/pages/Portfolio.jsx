@@ -29,7 +29,7 @@ const Portfolio = () => {
           <Box sx={{ display: 'flex', flexDirection: 'column', maxWidth: "450px", gap: "5px" }} className="col-3">
             <Box sx={{ overflow: 'hidden', paddingBottom: "2%" }} className="photos-zoom photos-brightness">
               <Link to="https://clarisse78.github.io/Lexia/">
-                <img src="../public/images/project-dev-portfolio-min.png" alt="Placeholder image" />
+                <img src="/images/project-dev-portfolio-min.png" alt="Placeholder image" />
               </Link>
             </Box>
             <Typography variant="h3" className="text-white" sx={{ fontSize: "25px", fontWeight: "700", fontFamily: 'Roboto, sans-serif' }}>Development Portfolio</Typography>
@@ -43,7 +43,7 @@ const Portfolio = () => {
           <Box sx={{ display: 'flex', flexDirection: 'column', maxWidth: "450px", gap: "5px" }} className="col-3">
             <Box sx={{ overflow: 'hidden', paddingBottom: "2%" }} className="photos-zoom photos-brightness">
               <Link to="https://godmelcorp.github.io/">
-                <img src="../public/images/project-proxima-min.png" alt="Placeholder image" />
+                <img src="/images/project-proxima-min.png" alt="Placeholder image" />
               </Link>
             </Box>
             <Typography variant="h3" className="text-white" sx={{ fontSize: "25px", fontWeight: "700", fontFamily: 'Roboto, sans-serif' }}>Proxima's Quest</Typography>
@@ -56,7 +56,7 @@ const Portfolio = () => {
           <Box sx={{ display: 'flex', flexDirection: 'column', maxWidth: "450px", gap: "5px" }} className="col-3">
             <Box sx={{ overflow: 'hidden', paddingBottom: "2%" }} className="photos-zoom photos-brightness">
               <Link to="https://clarisse78.github.io/WebDesignPortfolio/portfolio/js/index.html">
-                <img src="../public/images/project-javascript-min.png" alt="Placeholder image" />
+                <img src="/images/project-javascript-min.png" alt="Placeholder image" />
               </Link>
             </Box>
             <Typography variant="h3" className="text-white" sx={{ fontSize: "25px", fontWeight: "700", fontFamily: 'Roboto, sans-serif' }}>Javascript Projects</Typography>
@@ -71,7 +71,7 @@ const Portfolio = () => {
           <Box sx={{ display: 'flex', flexDirection: 'column', maxWidth: "450px", gap: "5px" }} className="col-3">
             <Box sx={{ overflow: 'hidden', paddingBottom: "2%" }} className="photos-zoom photos-brightness">
               <Link to="https://clarisse78.github.io/WebDesignPortfolio/portfolio/project-multi-column/index.html">
-                <img src="../public/images/project-multi-col.png" alt="Placeholder image" />
+                <img src="/images/project-multi-col.png" alt="Placeholder image" />
               </Link>
             </Box>
             <Typography variant="h3" className="text-white" sx={{ fontSize: "25px", fontWeight: "700", fontFamily: 'Roboto, sans-serif' }}>Multi-column Layouts</Typography>
@@ -86,7 +86,7 @@ const Portfolio = () => {
           <Box sx={{ display: 'flex', flexDirection: 'column', maxWidth: "450px", gap: "5px" }} className="col-3">
             <Box sx={{ overflow: 'hidden', paddingBottom: "2%" }} className="photos-zoom photos-brightness">
               <Link to="https://clarisse78.github.io/WebDesignPortfolio/portfolio/project-hero/index-1.html">
-                <img src="../public/images/project-hero.png" alt="Placeholder image" />
+                <img src="/images/project-hero.png" alt="Placeholder image" />
               </Link>
             </Box>
             <Typography variant="h3" className="text-white" sx={{ fontSize: "25px", fontWeight: "700", fontFamily: 'Roboto, sans-serif' }}>Hero Block Gallery</Typography>
@@ -100,7 +100,7 @@ const Portfolio = () => {
           <Box sx={{ display: 'flex', flexDirection: 'column', maxWidth: "450px", gap: "5px" }} className="col-3">
             <Box sx={{ overflow: 'hidden', paddingBottom: "2%" }} className="photos-zoom photos-brightness">
               <Link to="https://clarisse78.github.io/WebDesignPortfolio/crypto-wallet/index.html">
-                <img src="../public/images/project-crypto-wallet.jpg" alt="Placeholder image" />
+                <img src="/images/project-crypto-wallet.jpg" alt="Placeholder image" />
               </Link>
             </Box>
             <Typography variant="h3" className="text-white" sx={{ fontSize: "25px", fontWeight: "700", fontFamily: 'Roboto, sans-serif' }}>Crypto Wallet</Typography>
@@ -115,7 +115,7 @@ const Portfolio = () => {
           <Box sx={{ display: 'flex', flexDirection: 'column', maxWidth: "450px", gap: "5px" }} className="col-3">
             <Box sx={{ overflow: 'hidden', paddingBottom: "2%" }} className="photos-zoom photos-brightness">
               <Link to="https://clarisse78.github.io/WebDesignPortfolio/portfolio/smoothies/index.html">
-                <img src="../public/images/project-smoothie.jpg" alt="Placeholder image" />
+                <img src="/images/project-smoothie.jpg" alt="Placeholder image" />
               </Link>
             </Box>
             <Typography variant="h3" className="text-white" sx={{ fontSize: "25px", fontWeight: "700", fontFamily: 'Roboto, sans-serif' }}>Smooth Smoothies</Typography>
@@ -129,7 +129,7 @@ const Portfolio = () => {
           <Box sx={{ display: 'flex', flexDirection: 'column', maxWidth: "450px", gap: "5px" }} className="col-3">
             <Box sx={{ overflow: 'hidden', paddingBottom: "2%" }} className="photos-zoom photos-brightness">
               <Link to="https://clarisse78.github.io/WebDesignPortfolio/portfolio/fashion/index.html">
-                <img src="../public/images/project-fashion.jpg" alt="Placeholder image" />
+                <img src="/images/project-fashion.jpg" alt="Placeholder image" />
               </Link>
             </Box>
             <Typography variant="h3" className="text-white" sx={{ fontSize: "25px", fontWeight: "700", fontFamily: 'Roboto, sans-serif' }}>Snazzy Fashion</Typography>
@@ -142,7 +142,7 @@ const Portfolio = () => {
           <Box sx={{ display: 'flex', flexDirection: 'column', maxWidth: "450px", gap: "5px" }} className="col-3">
             <Box sx={{ overflow: 'hidden', paddingBottom: "2%" }} className="photos-zoom photos-brightness">
               <Link to="https://clarisse78.github.io/WebDesignPortfolio/store/index.html">
-                <img src="../public/images/store.png" alt="Placeholder image" />
+                <img src="/images/store.png" alt="Placeholder image" />
               </Link>
             </Box>
             <Typography variant="h3" className="text-white" sx={{ fontSize: "25px", fontWeight: "700", fontFamily: 'Roboto, sans-serif' }}>Online Store</Typography>

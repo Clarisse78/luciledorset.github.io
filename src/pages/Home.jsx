@@ -42,9 +42,9 @@ const Home = () => {
           </Box>
           <Box sx={{ flex: '1' }}>
             <picture>
-              <source media="(min-width: 768px)" srcSet="../public/images/lucile_cri_petit-min.png" />
-              <source media="(max-width: 767px)" srcSet="../public/images/android-chrome-192x192.png" />
-              <img className="main-img" src="../public/images/lucile_cri_petit-min.png" alt="Lucile Pelou" />
+              <source media="(min-width: 768px)" srcSet="/images/lucile_cri_petit-min.png" />
+              <source media="(max-width: 767px)" srcSet="/images/android-chrome-192x192.png" />
+              <img className="main-img" src="/images/lucile_cri_petit-min.png" alt="Lucile Pelou" />
             </picture>
           </Box>
         </Box>
@@ -66,7 +66,7 @@ const Home = () => {
           <Box sx={{ display: 'flex', flexDirection: 'column', maxWidth: "400px", gap: "5px" }} className="col-3">
             <Box sx={{ overflow: 'hidden', paddingBottom: "2%" }} className="photos-zoom photos-brightness">
               <Link to="https://clarisse78.github.io/Lexia/">
-                <img src="../public/images/project-dev-portfolio-min.png" alt="Placeholder image" />
+                <img src="/images/project-dev-portfolio-min.png" alt="Placeholder image" />
               </Link>
             </Box>
             <Typography variant="h3" className="text-white" sx={{ fontSize: "25px", fontWeight: "700", fontFamily: 'Roboto, sans-serif' }}>Development Portfolio</Typography>
@@ -80,7 +80,7 @@ const Home = () => {
           <Box sx={{ display: 'flex', flexDirection: 'column', maxWidth: "400px", gap: "5px" }} className="col-3">
             <Box sx={{ overflow: 'hidden', paddingBottom: "2%" }} className="photos-zoom photos-brightness">
               <Link to="https://godmelcorp.github.io/">
-                <img src="../public/images/project-proxima-min.png" alt="Placeholder image" />
+                <img src="/images/project-proxima-min.png" alt="Placeholder image" />
               </Link>
             </Box>
             <Typography variant="h3" className="text-white" sx={{ fontSize: "25px", fontWeight: "700", fontFamily: 'Roboto, sans-serif' }}>Proxima's Quest</Typography>
@@ -93,7 +93,7 @@ const Home = () => {
           <Box sx={{ display: 'flex', flexDirection: 'column', maxWidth: "400px", gap: "5px" }} className="col-3">
             <Box sx={{ overflow: 'hidden', paddingBottom: "2%" }} className="photos-zoom photos-brightness">
               <Link to="https://clarisse78.github.io/WebDesignPortfolio/portfolio/js/index.html">
-                <img src="../public/images/project-javascript-min.png" alt="Placeholder image" />
+                <img src="/images/project-javascript-min.png" alt="Placeholder image" />
               </Link>
             </Box>
             <Typography variant="h3" className="text-white" sx={{ fontSize: "25px", fontWeight: "700", fontFamily: 'Roboto, sans-serif' }}>Javascript Projects</Typography>

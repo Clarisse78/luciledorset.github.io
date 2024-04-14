@@ -4,7 +4,7 @@ import { Box } from '@mui/system';
 const Contact = () => {
   return (
     <Box sx={{
-      backgroundColor: '#2d3748', margin: 'auto', margin: 'auto', alignItems: "center", display: "flex", flexDirection: 'column',
+      backgroundColor: '#2d3748', margin: 'auto', alignItems: "center", display: "flex", flexDirection: 'column',
     }} >
       <Container className="container-text ">
         <Typography variant="h1" sx={{
