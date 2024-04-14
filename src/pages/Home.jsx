@@ -65,9 +65,9 @@ const Home = () => {
         <Box sx={{ display: 'flex', justifyContent: 'space-between', width: '100%', padding: "5%" }} className="flex-cols-3 cols-gap-4">
           <Box sx={{ display: 'flex', flexDirection: 'column', maxWidth: "400px", gap: "5px" }} className="col-3">
             <Box sx={{ overflow: 'hidden', paddingBottom: "2%" }} className="photos-zoom photos-brightness">
-              <Link to="https://clarisse78.github.io/Lexia/">
+              <a href="https://clarisse78.github.io/Lexia/">
                 <img src="images/project-dev-portfolio-min.png" alt="Placeholder image" />
-              </Link>
+              </a>
             </Box>
             <Typography variant="h3" className="text-white" sx={{ fontSize: "25px", fontWeight: "700", fontFamily: 'Roboto, sans-serif' }}>Development Portfolio</Typography>
             <Typography variant="body1" className="text-white" sx={{ fontSize: "20px", overflowWrap: "break-word", flexGrow: "1", fontFamily: 'Roboto, sans-serif' }}>An another website Portfolio for my development projects.</Typography>
@@ -79,9 +79,9 @@ const Home = () => {
 
           <Box sx={{ display: 'flex', flexDirection: 'column', maxWidth: "400px", gap: "5px" }} className="col-3">
             <Box sx={{ overflow: 'hidden', paddingBottom: "2%" }} className="photos-zoom photos-brightness">
-              <Link to="https://godmelcorp.github.io/">
+              <a href="https://godmelcorp.github.io/">
                 <img src="images/project-proxima-min.png" alt="Placeholder image" />
-              </Link>
+              </a>
             </Box>
             <Typography variant="h3" className="text-white" sx={{ fontSize: "25px", fontWeight: "700", fontFamily: 'Roboto, sans-serif' }}>Proxima's Quest</Typography>
             <Typography variant="body1" className="text-white" sx={{ fontSize: "20px", overflowWrap: "break-word", flexGrow: "1", fontFamily: 'Roboto, sans-serif' }}>The Website of a video games project made in C# with Unity. It present the game and the creators.</Typography>
@@ -92,9 +92,9 @@ const Home = () => {
           </Box>
           <Box sx={{ display: 'flex', flexDirection: 'column', maxWidth: "400px", gap: "5px" }} className="col-3">
             <Box sx={{ overflow: 'hidden', paddingBottom: "2%" }} className="photos-zoom photos-brightness">
-              <Link to="https://clarisse78.github.io/WebDesignPortfolio/portfolio/js/index.html">
+              <a href="https://clarisse78.github.io/WebDesignPortfolio/portfolio/js/index.html">
                 <img src="images/project-javascript-min.png" alt="Placeholder image" />
-              </Link>
+              </a>
             </Box>
             <Typography variant="h3" className="text-white" sx={{ fontSize: "25px", fontWeight: "700", fontFamily: 'Roboto, sans-serif' }}>Javascript Projects</Typography>
             <Typography variant="body1" className="text-white" sx={{ fontSize: "20px", overflowWrap: "break-word", flexGrow: "1", fontFamily: 'Roboto, sans-serif' }}>A selection of my recent JavaScript projects.</Typography>

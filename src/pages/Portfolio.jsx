@@ -28,9 +28,9 @@ const Portfolio = () => {
         }} className="flex-cols-3 cols-gap-4">
           <Box sx={{ display: 'flex', flexDirection: 'column', maxWidth: "450px", gap: "5px" }} className="col-3">
             <Box sx={{ overflow: 'hidden', paddingBottom: "2%" }} className="photos-zoom photos-brightness">
-              <Link to="https://clarisse78.github.io/Lexia/">
+              <a href="https://clarisse78.github.io/Lexia/">
                 <img src="images/project-dev-portfolio-min.png" alt="Placeholder image" />
-              </Link>
+              </a>
             </Box>
             <Typography variant="h3" className="text-white" sx={{ fontSize: "25px", fontWeight: "700", fontFamily: 'Roboto, sans-serif' }}>Development Portfolio</Typography>
             <Typography variant="body1" className="text-white" sx={{ fontSize: "20px", overflowWrap: "break-word", flexGrow: "1", fontFamily: 'Roboto, sans-serif' }}>An another website Portfolio for my development projects.</Typography>
@@ -42,9 +42,9 @@ const Portfolio = () => {
 
           <Box sx={{ display: 'flex', flexDirection: 'column', maxWidth: "450px", gap: "5px" }} className="col-3">
             <Box sx={{ overflow: 'hidden', paddingBottom: "2%" }} className="photos-zoom photos-brightness">
-              <Link to="https://godmelcorp.github.io/">
+              <a href="https://godmelcorp.github.io/">
                 <img src="images/project-proxima-min.png" alt="Placeholder image" />
-              </Link>
+              </a>
             </Box>
             <Typography variant="h3" className="text-white" sx={{ fontSize: "25px", fontWeight: "700", fontFamily: 'Roboto, sans-serif' }}>Proxima's Quest</Typography>
             <Typography variant="body1" className="text-white" sx={{ fontSize: "20px", overflowWrap: "break-word", flexGrow: "1", fontFamily: 'Roboto, sans-serif' }}>The Website of a video games project made in C# with Unity. It present the game and the creators.</Typography>
@@ -55,9 +55,9 @@ const Portfolio = () => {
           </Box>
           <Box sx={{ display: 'flex', flexDirection: 'column', maxWidth: "450px", gap: "5px" }} className="col-3">
             <Box sx={{ overflow: 'hidden', paddingBottom: "2%" }} className="photos-zoom photos-brightness">
-              <Link to="https://clarisse78.github.io/WebDesignPortfolio/portfolio/js/index.html">
+              <a href="https://clarisse78.github.io/WebDesignPortfolio/portfolio/js/index.html">
                 <img src="images/project-javascript-min.png" alt="Placeholder image" />
-              </Link>
+              </a>
             </Box>
             <Typography variant="h3" className="text-white" sx={{ fontSize: "25px", fontWeight: "700", fontFamily: 'Roboto, sans-serif' }}>Javascript Projects</Typography>
             <Typography variant="body1" className="text-white" sx={{ fontSize: "20px", overflowWrap: "break-word", flexGrow: "1", fontFamily: 'Roboto, sans-serif' }}>A selection of my recent JavaScript projects.</Typography>
@@ -70,9 +70,9 @@ const Portfolio = () => {
 
           <Box sx={{ display: 'flex', flexDirection: 'column', maxWidth: "450px", gap: "5px" }} className="col-3">
             <Box sx={{ overflow: 'hidden', paddingBottom: "2%" }} className="photos-zoom photos-brightness">
-              <Link to="https://clarisse78.github.io/WebDesignPortfolio/portfolio/project-multi-column/index.html">
+              <a href="https://clarisse78.github.io/WebDesignPortfolio/portfolio/project-multi-column/index.html">
                 <img src="images/project-multi-col.png" alt="Placeholder image" />
-              </Link>
+              </a>
             </Box>
             <Typography variant="h3" className="text-white" sx={{ fontSize: "25px", fontWeight: "700", fontFamily: 'Roboto, sans-serif' }}>Multi-column Layouts</Typography>
             <Typography variant="body1" className="text-white" sx={{ fontSize: "20px", overflowWrap: "break-word", flexGrow: "1", fontFamily: 'Roboto, sans-serif' }}>A gallery of multi-column, reponsive layouts.</Typography>
@@ -85,9 +85,9 @@ const Portfolio = () => {
 
           <Box sx={{ display: 'flex', flexDirection: 'column', maxWidth: "450px", gap: "5px" }} className="col-3">
             <Box sx={{ overflow: 'hidden', paddingBottom: "2%" }} className="photos-zoom photos-brightness">
-              <Link to="https://clarisse78.github.io/WebDesignPortfolio/portfolio/project-hero/index-1.html">
+              <a href="https://clarisse78.github.io/WebDesignPortfolio/portfolio/project-hero/index-1.html">
                 <img src="images/project-hero.png" alt="Placeholder image" />
-              </Link>
+              </a>
             </Box>
             <Typography variant="h3" className="text-white" sx={{ fontSize: "25px", fontWeight: "700", fontFamily: 'Roboto, sans-serif' }}>Hero Block Gallery</Typography>
             <Typography variant="body1" className="text-white" sx={{ fontSize: "20px", overflowWrap: "break-word", flexGrow: "1", fontFamily: 'Roboto, sans-serif' }}>A gallery of hero block elements with split-screen layouts and duotone images.</Typography>
@@ -99,9 +99,9 @@ const Portfolio = () => {
 
           <Box sx={{ display: 'flex', flexDirection: 'column', maxWidth: "450px", gap: "5px" }} className="col-3">
             <Box sx={{ overflow: 'hidden', paddingBottom: "2%" }} className="photos-zoom photos-brightness">
-              <Link to="https://clarisse78.github.io/WebDesignPortfolio/crypto-wallet/index.html">
+              <a href="https://clarisse78.github.io/WebDesignPortfolio/crypto-wallet/index.html">
                 <img src="images/project-crypto-wallet.jpg" alt="Placeholder image" />
-              </Link>
+              </a>
             </Box>
             <Typography variant="h3" className="text-white" sx={{ fontSize: "25px", fontWeight: "700", fontFamily: 'Roboto, sans-serif' }}>Crypto Wallet</Typography>
             <Typography variant="body1" className="text-white" sx={{ fontSize: "20px", overflowWrap: "break-word", flexGrow: "1", fontFamily: 'Roboto, sans-serif' }}>A dark-themed responsive single-page website for a fictitious crypto wallet.</Typography>
@@ -114,9 +114,9 @@ const Portfolio = () => {
 
           <Box sx={{ display: 'flex', flexDirection: 'column', maxWidth: "450px", gap: "5px" }} className="col-3">
             <Box sx={{ overflow: 'hidden', paddingBottom: "2%" }} className="photos-zoom photos-brightness">
-              <Link to="https://clarisse78.github.io/WebDesignPortfolio/portfolio/smoothies/index.html">
+              <a href="https://clarisse78.github.io/WebDesignPortfolio/portfolio/smoothies/index.html">
                 <img src="images/project-smoothie.jpg" alt="Placeholder image" />
-              </Link>
+              </a>
             </Box>
             <Typography variant="h3" className="text-white" sx={{ fontSize: "25px", fontWeight: "700", fontFamily: 'Roboto, sans-serif' }}>Smooth Smoothies</Typography>
             <Typography variant="body1" className="text-white" sx={{ fontSize: "20px", overflowWrap: "break-word", flexGrow: "1", fontFamily: 'Roboto, sans-serif' }}>A multi-column, flexbox-based page layout and hero image with a tinted overlay.</Typography>
@@ -128,9 +128,9 @@ const Portfolio = () => {
 
           <Box sx={{ display: 'flex', flexDirection: 'column', maxWidth: "450px", gap: "5px" }} className="col-3">
             <Box sx={{ overflow: 'hidden', paddingBottom: "2%" }} className="photos-zoom photos-brightness">
-              <Link to="https://clarisse78.github.io/WebDesignPortfolio/portfolio/fashion/index.html">
+              <a href="https://clarisse78.github.io/WebDesignPortfolio/portfolio/fashion/index.html">
                 <img src="images/project-fashion.jpg" alt="Placeholder image" />
-              </Link>
+              </a>
             </Box>
             <Typography variant="h3" className="text-white" sx={{ fontSize: "25px", fontWeight: "700", fontFamily: 'Roboto, sans-serif' }}>Snazzy Fashion</Typography>
             <Typography variant="body1" className="text-white" sx={{ fontSize: "20px", overflowWrap: "break-word", flexGrow: "1", fontFamily: 'Roboto, sans-serif' }}>A web page for a fashion retailer with a background video that plays in a continuous loop.</Typography>
@@ -141,9 +141,9 @@ const Portfolio = () => {
           </Box>
           <Box sx={{ display: 'flex', flexDirection: 'column', maxWidth: "450px", gap: "5px" }} className="col-3">
             <Box sx={{ overflow: 'hidden', paddingBottom: "2%" }} className="photos-zoom photos-brightness">
-              <Link to="https://clarisse78.github.io/WebDesignPortfolio/store/index.html">
+              <a href="https://clarisse78.github.io/WebDesignPortfolio/store/index.html">
                 <img src="images/store.png" alt="Placeholder image" />
-              </Link>
+              </a>
             </Box>
             <Typography variant="h3" className="text-white" sx={{ fontSize: "25px", fontWeight: "700", fontFamily: 'Roboto, sans-serif' }}>Online Store</Typography>
             <Typography variant="body1" className="text-white" sx={{ fontSize: "20px", overflowWrap: "break-word", flexGrow: "1", fontFamily: 'Roboto, sans-serif' }}>An online store offering books on web design with affiliate links to Amazon.</Typography>
