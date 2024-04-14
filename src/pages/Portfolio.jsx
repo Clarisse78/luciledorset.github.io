@@ -99,13 +99,13 @@ const Portfolio = () => {
 
           <Box sx={{ display: 'flex', flexDirection: 'column', maxWidth: "450px", gap: "5px" }} className="col-3">
             <Box sx={{ overflow: 'hidden', paddingBottom: "2%" }} className="photos-zoom photos-brightness">
-              <a href="https://clarisse78.github.io/WebDesignPortfolio/crypto-wallet/index.html">
+              <a href="https://clarisse78.github.io/WebDesignPortfolio/portfolio/crypto-wallet/index.html">
                 <img src="images/project-crypto-wallet.jpg" alt="Placeholder image" />
               </a>
             </Box>
             <Typography variant="h3" className="text-white" sx={{ fontSize: "25px", fontWeight: "700", fontFamily: 'Roboto, sans-serif' }}>Crypto Wallet</Typography>
             <Typography variant="body1" className="text-white" sx={{ fontSize: "20px", overflowWrap: "break-word", flexGrow: "1", fontFamily: 'Roboto, sans-serif' }}>A dark-themed responsive single-page website for a fictitious crypto wallet.</Typography>
-            <Button variant="solid" color="soft" href="https://clarisse78.github.io/WebDesignPortfolio/crypto-wallet/index.html" style={{ backgroundColor: 'white', color: 'black', border: '1px solid black', width: "fit-content", fontWeight: "bold", marginTop: "2%" }}>
+            <Button variant="solid" color="soft" href="https://clarisse78.github.io/WebDesignPortfolio/portfolio/crypto-wallet/index.html" style={{ backgroundColor: 'white', color: 'black', border: '1px solid black', width: "fit-content", fontWeight: "bold", marginTop: "2%" }}>
               <Typography sx={{ fontSize: "18px", fontWeight: "600" }}>View project</Typography>
               <ArrowRightAltIcon sx={{ paddingLeft: "2%" }}></ArrowRightAltIcon>
             </Button>
