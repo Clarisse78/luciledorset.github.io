@@ -16,10 +16,7 @@
     }
 }
 
-@font-face {
-    font-family: 'Anta';
-    src: url('./assets/fonts/Anta-Regular.otf') format('opentype');
-}
+
 
 .main-img {
     margin-left: auto;
